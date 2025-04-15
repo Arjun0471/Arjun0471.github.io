@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         else if (target.tagName === 'A') objectType = 'link';
         else if (target.tagName === 'BUTTON') objectType = target.classList.contains('arrow') ? 'arrow' : 'button';
         else if (target.classList.contains('skill-level')) objectType = 'skill-bar';
+        else if (target.tagName === 'LI' && target.parentElement.parentElement.id === 'achievements') objectType = 'achievement';
         logEvent('click', objectType, target);
     });
     document.body.addEventListener('click', (event) => {

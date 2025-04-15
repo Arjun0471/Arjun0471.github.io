@@ -111,6 +111,12 @@ ul {
 
 ul li {
     margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+ul li:hover {
+    color: #d35400;
+    transform: translateX(5px);
 }
 
 .profile-pic {
@@ -172,6 +178,9 @@ ul li {
 
 .skills-chart {
     max-width: 700px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 .skill {
