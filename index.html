@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arjun Dingankar's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>Arjun Dingankar's Portfolio</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="analyzer.html">Text Analyzer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="photos/profilephoto.jpeg" alt="Arjun Dingankar" class="profile-pic">
+            <p>Hey, I'm Arjun Dingankar, a first-year student at IIIT Hyderabad, diving into the fascinating world of Computational Natural Sciences. I'm passionate about blending science and tech to solve real-world problems. When I'm not coding or studying, you’ll likely find me on the football field, channeling my energy into every kick and sprint. Music is my escape—I play the drums with a rhythm that keeps me grounded. I also love getting lost in a good book or hitting the track for a run, chasing both ideas and endorphins. As part of The Music Club at IIITH, I help bring events to life, merging my love for creativity and teamwork. Excited to share my journey with you!</p>
+        </section>
+        <section id="photos">
+            <h2>Photos from My Birthplace</h2>
+            <div class="slideshow-container">
+                <img src="photos/local1.jpeg" alt="Birthplace Photo 1" class="slideshow-pic active">
+                <img src="photos/local2.jpeg" alt="Birthplace Photo 2" class="slideshow-pic">
+                <img src="photos/local3.jpeg" alt="Birthplace Photo 3" class="slideshow-pic">
+                <button class="arrow left-arrow">❮</button>
+                <button class="arrow right-arrow">❯</button>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Education Background</h2>
+            <ul>
+                <li><strong>International Institute of Information Technology Hyderabad (IIITH)</strong><br>B.Tech + M.S. in Computational Natural Sciences, July 2024 - July 2029</li>
+                <li><strong>HFS Thane</strong><br>High School, June 2022 - March 2024</li>
+                <li><strong>Euroschool, Thane</strong><br>School, June 2012 - June 2022</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-chart">
+                <div class="skill">
+                    <span class="skill-name">C</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%;">Advanced</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 50%;">Intermediate</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">C++</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 20%;">Beginner</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cv">
+            <h2>My CV</h2>
+            <a href="cv.pdf" target="_blank">Download My CV (PDF)</a>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
