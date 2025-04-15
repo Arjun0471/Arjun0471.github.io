@@ -99,6 +99,14 @@ h2 {
     font-weight: 800;
 }
 
+h3 {
+    color: #d35400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
 p, ul {
     font-size: 1.3em;
     line-height: 1.8;
@@ -117,6 +125,17 @@ ul li {
 ul li:hover {
     color: #d35400;
     transform: translateX(5px);
+}
+
+.total-count {
+    font-weight: 700;
+    color: #a04000;
+    font-size: 1.4em;
+    margin-top: 10px;
+    background: #ffe8d6;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 .profile-pic {
@@ -275,28 +294,4 @@ button:hover {
 #analysisResults li {
     margin: 15px 0;
     font-size: 1.2em;
-}
-
-@media (max-width: 900px) {
-    body {
-        padding: 25px;
-    }
-    .slideshow-pic {
-        width: 100%;
-    }
-    .nav-links {
-        flex-direction: column;
-    }
-    .nav-links a {
-        padding: 15px;
-    }
-    section {
-        padding: 30px;
-    }
-    h1 {
-        font-size: 2.2em;
-    }
-    h2 {
-        font-size: 1.8em;
-    }
 }

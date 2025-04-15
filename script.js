@@ -59,19 +59,39 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Special Symbols: ${symbols}</p>
             `;
             const pronounCounts = countWords(text, pronouns);
+            let totalPronouns = 0;
+            for (const count of Object.values(pronounCounts)) {
+                totalPronouns += count;
+            }
             resultsDiv.innerHTML += `
                 <h3>Pronouns</h3>
                 <ul>${Object.entries(pronounCounts).map(([word, count]) => `<li>${word}: ${count}</li>`).join('')}</ul>
+                <p class="total-count">Total Pronouns: ${totalPronouns}</p>
             `;
             const prepositionCounts = countWords(text, prepositions);
+            let totalPrepositions = 0;
+            for (const count of Object.values(prepositionCounts)) {
+                totalPrepositions += count;
+            }
             resultsDiv.innerHTML += `
                 <h3>Prepositions</h3>
                 <ul>${Object.entries(prepositionCounts).map(([word, count]) => `<li>${word}: ${count}</li>`).join('')}</ul>
+                <p class="total-count">Total Prepositions: ${totalPrepositions}</p>
             `;
             const articleCounts = countWords(text, articles);
+            let totalArticles = 0;
+            for (const count of Object.values(articleCounts)) {
+                totalArticles += count;
+            }
             resultsDiv.innerHTML += `
                 <h3>Indefinite Articles</h3>
                 <ul>${Object.entries(articleCounts).map(([word, count]) => `<li>${word}: ${count}</li>`).join('')}</ul>
+                <p class="total-count">Total Articles: ${totalArticles}</p>
+            `;
+            const totalAll = totalPronouns + totalPrepositions + totalArticles;
+            resultsDiv.innerHTML += `
+                <h3>Total Counts</h3>
+                <p class="total-count">Total (Pronouns + Prepositions + Articles): ${totalAll}</p>
             `;
         });
         function countWords(text, wordList) {
